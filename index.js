@@ -59,7 +59,7 @@ const projects = Object.freeze([
     id:2,
     name: "Kasi Fast Food",
     description: "A fast food demo website",
-    tools: ["ReactJS", "React Router"],
+    tools: ["Imba","TypeScript", "Firebase Auth", "Firebase Firestore"],
     images: ["./images/kasi-menu.jpg", "./images/kasi-login.jpg" ],
     siteLink: "https://kasi-fast-food.netlify.app",
     githubLink: "https://github.com/vusiSiya/kasi-fast-food"
