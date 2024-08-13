@@ -51,6 +51,10 @@ const projects = Object.freeze([
     name: "Shopping Cart",
     description: "A mock online shopping website that sells traditional clothing.",
     tools: ["ReactJS", "React Router"],
+    icons: [
+      `<img src="./images/react.svg" class="fa-fade" width="17">`,
+      `<img src="./images/react-router.svg" class="fa-fade rr" width="17">`,
+    ],
     images: ["./images/products-page.jpg", "./images/product-detail-page.jpg"],
     siteLink: "https://siya-shopping-cart.netlify.app",
     githubLink: "https://github.com/vusiSiya/Online-Shopping-Store"
@@ -60,6 +64,12 @@ const projects = Object.freeze([
     name: "Kasi Fast Food",
     description: "A fast food demo website",
     tools: ["Imba","TypeScript", "Firebase Auth", "Firebase Firestore"],
+    icons: [
+      `<img src="./images/imba-logo.webp" class="fa-fade" width="15" >`,
+      `<img src="./images/typescript.svg" class="fa-fade" width="15">`,
+      `<img src="./images/firebase-auth.webp" class="fa-fade" width="15">`,
+      `<img src="./images/firebase-firestore.svg" class="fa-fade" width="15">`,
+    ],
     images: ["./images/kasi-menu.jpg", "./images/kasi-login.jpg" ],
     siteLink: "https://kasi-fast-food.netlify.app",
     githubLink: "https://github.com/vusiSiya/kasi-fast-food"
@@ -74,7 +84,10 @@ workContainer.innerHTML = projects.map((project) =>{
           <p>${project.description}</p>
 
           <ul class="work__list">
-            ${project.tools.map(tool=> `<li>${tool}</li>`).join("")}
+            ${project.tools.map((tool, i)=> `<li>
+                ${tool + " " + project?.icons[i]}
+              </li>`
+            ).join("")}
           </ul>
           
           <div class="work__links">
