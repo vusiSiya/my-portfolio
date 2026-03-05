@@ -47,19 +47,6 @@ const workContainer = document.querySelector(".work__boxes");
 
 const projects = Object.freeze([
   {
-    id:1,
-    name: "Shopping Cart",
-    description: "A mock online shopping website that sells traditional clothing.",
-    tools: ["ReactJS", "React Router"],
-    icons: [
-      `<img src="./images/react.svg" class="fa-fade" width="17">`,
-      `<img src="./images/react-router.svg" class="fa-fade rr" width="17">`,
-    ],
-    images: ["./images/products-page.jpg", "./images/product-detail-page.jpg"],
-    siteLink: "https://siya-shopping-cart.netlify.app",
-    githubLink: "https://github.com/vusiSiya/Online-Shopping-Store"
-  },
-  {
     id:2,
     name: "Kasi Fast Food",
     description: "A fast food demo website",
